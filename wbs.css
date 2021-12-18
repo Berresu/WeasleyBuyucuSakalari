@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 450px 3fr 2fr 1fr;
+    grid-template-areas: 
+    "header"
+    "article"
+    "aside"
+    "footer"
+    ;
+}
+
+header{
+    grid-area: header;
+    background-color: #F26B33;
+    background-image: url(images/wbsLogo.fw.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+}
+
+header > h1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 75px;
+    font-family: Merriweather;
+    font-weight: bolder;
+    color: #482368;
+}
+
+header > ul{
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    list-style-type: none;
+    word-spacing: 20px;
+}
+
+header > ul >li{
+    padding: 10px;
+    font-family: Merriweather;
+    font-weight: bolder;
+}
+
+header > ul > li > a{
+    font-weight: bolder;
+    text-decoration: none;
+    color: #482368;
+}
+
+header > div{
+    display: flex;
+    justify-content: center;
+    
+}
+
+article{
+    grid-area: article;
+    background-color: #FFB171;
+    display: flex;
+    padding: 5vw;
+}
+
+.yumruklayanTeleskop{
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+}
+
+.pigmePofidik{
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+}
+
+.askIksiri{
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+}
+
+.yumruklayanTeleskop > img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#resim{
+    display: flex;
+    flex: 1 1 50%;
+    padding-left: 5vw;
+    padding-bottom: 2vw;
+    width: 100%;
+    height: 100%;
+}
+
+.pigmePofidik > img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.askIksiri > img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.yumruklayanTeleskop > h3{
+    color: #482368;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    word-spacing: 5px;
+    padding-bottom: 1vw;
+}
+
+.yumruklayanTeleskop > p{
+    color: #230a3a;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.yumruklayanTeleskop > h4{
+    padding-top: 1vw;
+    color: #230a3a;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.pigmePofidik > h3{
+    color: #482368;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    word-spacing: 5px;
+    padding-bottom: 1vw;
+}
+
+.pigmePofidik > p{
+    color: #230a3a;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.pigmePofidik > h4{
+    padding-top: 1vw;
+    color: #230a3a;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.askIksiri > h3{
+    color: #482368;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    word-spacing: 5px;
+    padding-bottom: 1vw;
+}
+
+.askIksiri > p{
+    color: #230a3a;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.askIksiri > h4{
+    padding-top: 1vw;
+    color: #230a3a;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+aside{
+    grid-area: aside;
+    background-color: #FD7840;
+}
+
+#musteriYorumlari{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#musteriYorumlari > h1{
+    color: #6A3203;
+    font-size: 30px;
+    justify-self: center;
+    padding-top: 8vw;
+}
+
+#musteriResim > img{
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+}
+
+.harryPotter{
+    display: flex;
+    padding-bottom: 2vw;
+    padding-left: 7vw;
+}
+
+.ronWeasley{
+    display: flex;
+    padding-left: 7vw;
+}
+
+.hermioneGrenger{
+    display: flex;
+    padding-bottom: 2vw;
+    padding-left: 7vw;
+}
+
+.aciklama{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3vw;
+    padding-left: 3vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.aciklama >h2{
+    font-size: 28px;
+    color: #411f03;
+}
+
+.aciklama > p{
+    font-size: 24px;
+    color: #411f03;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #713015;
+}
